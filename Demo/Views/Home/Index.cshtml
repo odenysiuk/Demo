@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>@System.Configuration.ConfigurationManager.AppSettings["Greating"]</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>App Service plans</h2>
+        <p>
+            Since you pay for the computing resources your App Service plan allocates (see How much does my App Service plan cost?), 
+            you can potentially save money by putting multiple apps into one App Service plan. You can continue to add apps to an existing 
+            plan as long as the plan has enough resources to handle the load. However, keep in mind that apps in the same App Service 
+            plan all share the same compute resources. To determine whether the new app has the necessary resources, you need to understand 
+            the capacity of the existing App Service plan, and the expected load for the new app. Overloading an App Service plan can 
+            potentially cause downtime for your new and existing apps.
+        </p>
+        <p><a class="btn btn-default" href="https://azure.microsoft.com/en-us/pricing/details/app-service/">App Service pricing</a></p>
+        <p><a class="btn btn-default" href="https://azure.microsoft.com/en-us/pricing/details/app-service/plans/">Compare</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Azure Deployment Slots </h2>
+        <p>
+            Azure App Services are extremely useful for developers. It offers Web Apps, API Apps, 
+            Mobile Apps and Function Apps (that run Azure Functions). These apps are incredibly powerful 
+            and can literally get you up and running in minutes. They provide a host of amazing features like (auto)scaling, 
+            easy authentication, offline sync (for Mobile Apps), hybrid connections and much, much more. 
+            One feature that these apps share is probably the most underrated one that many people don’t know about: deployment slots..</p>
+        <p><a class="btn btn-default" href="https://stackify.com/azure-deployment-slots/"> For more details</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Security</h2>
+        <p>Knowing that security is one of the biggest concerns for companies considering a move to the cloud,
+            Microsoft designed Azure with security in mind. The .NET Access Control Service provides a way to integrate identities,
+            and Security Assertion Markup Language (SAML) tokens are used by applications to determine whether a user is allowed access. 
+            Microsoft has designed its compliance framework to meet regulatory requirements. </p>
+        <p><a class="btn btn-default" href="http://techgenix.com/Microsoft-Azure-Security-Cloud/">For more details</a></p>
+    </div>
+</div>
+<div>
+    <h3>Azure SQL Database</h3>
+    <h5> SLA for SQL Database</h5>
+    Basic, Standard, and Premium Tiers
+    SLA guarantee at least 99.99% of the time customers will have connectivity between their single or elastic Basic, Standard, or Premium
+    Microsoft Azure SQL Database and our Internet gateway
+    <h5>Azure SQL Database DTU Calculator</h5>
+    For a single Azure SQL database at a specific performance level within a service tier, 
+    Microsoft guarantees a certain level of resources for that database (independent of any other database in the Azure cloud) 
+    and providing a predictable level of performance. This amount of resources is calculated as a number of Database Transaction Units or DTUs, 
+    and is a blended measure of CPU, memory, I/O (data and transaction log I/O). The ratio amongst these resources was originally determined by an OLTP benchmark workload designed to be typical of real-world OLTP workloads. When your workload exceeds the amount of any of these resources, your throughput is throttled - resulting in slower performance and timeouts. The resources used by your workload do not impact the resources available to other SQL databases in the Azure cloud, and the resource used by other workloads do not impact the resources available to your SQL database.
+    <p>What are Azure SQL Database service tiers <a class="btn btn-default" href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tiers">For more details</a></p>
+    <p>Azure SQL Database DTU Calculator <a class="btn btn-default" href="http://dtucalculator.azurewebsites.net/">For more details</a></p>
+
+</div>
